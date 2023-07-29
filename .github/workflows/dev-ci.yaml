@@ -24,7 +24,7 @@ jobs:
         env:
           REGISTRY: ${{ steps.aws-auth.outputs.registry }}
           REPOSITORY: devopsgirl2023/hello-ops-girl
-          IMAGE_TAG: ${{ github.sha }}
+          IMAGE_TAG: ${{ github.sha }}-zq
         run: |
           docker build -t $REGISTRY/$REPOSITORY:$IMAGE_TAG .
           docker push $REGISTRY/$REPOSITORY:$IMAGE_TAG
