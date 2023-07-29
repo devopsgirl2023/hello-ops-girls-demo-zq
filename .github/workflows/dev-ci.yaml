@@ -3,6 +3,7 @@ run-name: dev-ci
 on:
   push:
     branches: ['*']
+
 env:
   AWS_ACCOUNT: "494526681395"
   AWS_REGION: "ap-southeast-1"
